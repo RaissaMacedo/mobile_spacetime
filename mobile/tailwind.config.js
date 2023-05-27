@@ -6,7 +6,7 @@ module.exports = {
       fontFamily: {
         title: 'Roboto_700Bold',
         body: 'Roboto_400Regular',
-        aly: 'BaiJamjuree_700Bold',
+        alt: 'BaiJamjuree_700Bold',
       },
       colors: {
         gray: {
