@@ -48,6 +48,7 @@ export default function App() {
     const response = await api.post('/register', {
       code,
     })
+
     const { token } = response.data
     await SecureStore.setItemAsync('token', token)
     // rota que quer enviar o usuario
@@ -60,6 +61,8 @@ export default function App() {
         scheme: 'spacetime ',
       }),
     ) */
+    console.log('TESTE', response)
+
     if (response?.type === 'success') {
       const { code } = response.params
       handleGithubOAuthCode(code)
